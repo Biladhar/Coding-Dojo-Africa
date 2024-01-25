@@ -16,3 +16,20 @@ for(var miles=0 ; miles<= 6 ; miles++){
 }
 
 //-------------------------------------------------------------------
+for(var miles=0 ; miles<= 6 ; miles++){
+    if (miles % 2 === 0){
+        if (miles != 0)
+        console.log(miles + " miles nice joob , Take a cookie")
+    }
+}
+
+//-------------------------ninja bonus----------------------------------------
+var miles;
+var time;
+for(miles = 0 , time = 0 ; miles <=6 ; miles++ , time++){
+    var speed = miles / time
+    if(miles % 2 && speed >= 5,5 ){
+        if ( miles != 0)
+        console.log(miles + " miles nice job , take a cookie")
+    }
+} 

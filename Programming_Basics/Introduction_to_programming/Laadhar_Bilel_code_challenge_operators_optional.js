@@ -22,7 +22,7 @@ function howMuchLeftOverCake2(numberOfPieces,numberOfPeople){
         console.log("You have some leftovers");
         return "You have some leftovers";
     }
-    else if(rest >= 3 && rest >= 5){
+    else if(rest >= 3 && rest <= 5){
         console.log("You have leftovers to share");
         return "You have leftovers to share";
     }
