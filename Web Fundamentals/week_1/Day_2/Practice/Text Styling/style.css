@@ -9,6 +9,7 @@ h2{
     color: aliceblue;
     background-color: blueviolet;
     text-align: center;
+    border-right: 9px solid rgb(100,100,100);
 }
 h3{
     color: blue;
