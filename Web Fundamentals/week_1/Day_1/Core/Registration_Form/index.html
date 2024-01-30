@@ -11,12 +11,68 @@
         <label>First Name:* </label>
         <input type="text" name="first_name">
     </div>
-    <div>
-        
-    </div>
+    <br>
     <div>
         <label>Last Name:*</label>
         <input type="text" name="last_name">
-    </diV>
+    </div>
+    <br>
+    <div>
+        <label>Email Address:*</label>
+        <input type="email" name="email">
+    </div>
+    <br>
+    <div>
+        <label>Password:*</label>
+        <input type="password" name="password">
+    </div>
+    <br>
+    <div>
+        <label>Confirm Password:*</label>
+        <input type="password" name="confirmPassword">
+    </div>
+    <br>
+    <div>
+        <label>Birthday</label>
+        <input type="date" name="birthday">
+    </div>
+    <br>
+    <div>
+        <label >Gender Identity:</label>
+        <br>
+        <br>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="non-binary" id="non-binary">
+        <label for="non-binary">Non-Binary</label>
+        <input type="radio" name="gender" value="ipnto" id="ipnto">
+        <label for="ipnto">I prefer not to answer</label>
+    </div>
+    <br>
+    <div>
+        <label>A short description about myself:</label>
+        <br>
+        <textarea name="comment" cols="20" rows="2"></textarea>
+    </div>
+    <br>
+    <div>
+        <label>Favorite Language:</label>
+        <select name="favLanguage">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="checkbox" name="emailUpdate" id="emailUpdate">
+        <label for="emailUpdate">Yes, I would like to receive periodic email updates</label>
+    </div>
+    <br>
+    <input type="submit" value="Create Account">
+    <br>
+    <p>*Indicates a required field</p>
 </body>
 </html>
