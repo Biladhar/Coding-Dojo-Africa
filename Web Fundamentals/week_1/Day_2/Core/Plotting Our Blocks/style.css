@@ -16,9 +16,9 @@
 }
 .main {
     height: 400px;
-    width: 715px;
+    width: 706px;
     background-color: red;
-    padding: 15px 0px 0px 12px;
+    padding: 20px 0px 0px 20px;
 }
 .side-nav, .main{
     display: inline-block;
@@ -29,12 +29,13 @@
     height: 200px;
     background-color: yellow;
     display: inline-block;
-    width: 186px;
-    padding: 16px;
+    width: 200px;
+    margin-right: 25px;
 }
 #advertisement {
     height: 120px;
     width: 660px;
     background-color: purple;
+    margin-top: 10px;
 } 
 
