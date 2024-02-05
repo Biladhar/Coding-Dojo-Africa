@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: black;
+    color: white;
+    height: 70px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn{
+    background-color: blue;
+    color: white;
+    width: 80px;
+    height: 30px;
+    position: relative;
+    right: 90px;
+}
+
+/*======================================*/
+.container{
+    display: flex;
+}
+.leftside{
+    width: 750px;
+    position: relative;
+    left: 10%;
+}
+
+
+.usercard{
+    ax-width: 750px;
+    height: 500px;
+    position: relative;
+    top: 20px;
+}
+
+.profilePic{
+    border-radius: 50%;
+    width: 160px;
+    border: 2px solid black;
+    position: relative;
+    top: 20px;
+}
+
+.usercardheader{
+    max-width: 750px;
+    height: 130px;
+    background-color: #17a2b8;
+    padding-left:5% ;
+    border: 2px solid #17a2b8;
+}
+
+.usercardbody{
+    /* padding: 50px 0px 10px 30px; */
+    padding-left: 8%;
+    height: 230px;
+    max-width: 750px;
+    border: 2px solid #cccccc;
+    border-top: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 60px;
+}
+
+.usercardbody .town img{
+    width: 15px;
+    height: 20px;
+}
+
+.edit img{
+    width: 20px;
+}
+.town{
+    display: flex;
+    gap: 20px;
+}
+
+.edit{
+    display: flex;
+    gap: 10px;
+}
+
+.educHeader{
+    background-color: #333333;
+    height: 45px;
+    max-width: 750px;
+    color: white;
+    padding-left: 30px ;
+}
+
+.educationBody{
+    max-width: 750px;
+    min-height: 125px;
+    background-color: white;
+    border: 2px solid #cccccc;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.educationBody h3{
+    color: #cccccc;
+}
+
+.rigthside{
+    position: relative;
+    left: 15%;
+    width: 360px;
+}
+
+.rigthside .iconspic{
+    width: 35px;
+}
+
+.icons{
+    display: flex;
+    gap: 5px;
+}
+
+.rigthside .pic{
+    border-radius: 50%;
+    width: 70px;
+}
+
+.box1{
+    position: relative;
+    top: 20px;
+}
+
+.box1body{
+    border: 2px solid #cccccc;
+    max-width: 356px;
+}
+
+.box1header{
+    background-color: #333333;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.two{
+    background-color: #cccccc;
+    border-radius: 50%;
+    color: black;
+    width: 38px;
+    text-align: center;
+}
+
+.box1line1{
+    max-width: 360px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.box1line2{
+    max-width: 360px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.contact img{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.box2{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box2header{
+    background-color: #333333;
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.five{
+    background-color: #cccccc;
+    border-radius: 50%;
+    color: black;
+    width: 75px;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    gap: 30px;
+}
+
+.box2body{
+    border: 2px solid #cccccc;
+    height: 240px;
+    padding-bottom: 5px;
+}
+
+.more{
+    border: 2px solid #cccccc;
+    height: 30px;
+    width: 346px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+    right: 2px;
+    top: 5px;
+}
