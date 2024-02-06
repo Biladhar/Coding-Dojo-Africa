@@ -1,0 +1,125 @@
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* flex-items */
+
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* nav bar */
+
+nav{
+    padding: 0px 50px;
+}
+
+.navbar{
+    background-color: #cccccc;
+    min-height: 60px;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav input{
+    width: 40%;
+    border: 2px solid black;
+}
+
+nav button{
+    background-color: #2b78e4;
+    font-size: 12px;
+    width: 50px;
+    height: 25px;
+    border: 2px solid black;
+    box-shadow: 2px 2px;
+}
+
+
+/* main-section */
+
+main{
+    min-height: 400px;
+    display: flex;
+    padding: 20px 50px;
+}
+
+/* left side */
+
+.left-column{
+    flex: 3;
+    padding-right: 10px;
+}
+
+
+
+/* box 1 / 2 */
+
+.ninja1{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    padding-top: 10px;
+}
+
+
+.word{
+    flex: 1;
+}
+
+.definition{
+    flex: 2;
+}
+
+.word button{
+    background-color: #ffd966;
+    margin-top: 8px;
+    border: 2px solid black;
+    width: 64px;
+    height: 25px;
+    box-shadow: 2px 2px black;
+}
+
+.space{
+    margin-top: 20px;
+}
+
+/* right side */
+
+
+.right-column{
+    flex: 1;
+}
+
+.you{
+    border: 2px solid black;
+    width: 222px;
+    padding: 5px 5px;
+}
+
+.you button{
+    background-color: #93c47d;
+    width: 200px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 1px black;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.def{
+    margin: 10px 5px;
+}

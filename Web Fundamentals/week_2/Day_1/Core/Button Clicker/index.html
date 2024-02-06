@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav>
+        <div class="navbar">
+            <h1>Dojonary</h1>
+            <input type="text" placeholder="Search">
+            <button onclick="change(this)">Login</button>
+        </div>
+    </nav>
+    <!-- main content -->
+    <main>
+        <!-- left side -->
+        <div class="left-column">
+
+            <!-- first box -->
+
+            <div class="ninja1">
+                <div class="word flex-item">
+                    <h1>ninja</h1>
+                    <p>noun</p>
+                    <p>Plural: ninjas</p>
+                    <button onclick="alert('Ninja was liked')">13 likes</button>
+                </div>
+                <div class="definition">
+                    <p>A practitioner skilled in the</p>
+                    <p>
+                        <a href="#">Japanese </a>
+                        art of 
+                        <a href="#">ninjutsu</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- second box -->
+
+            <div class="ninja1 space">
+                <div class="word flex-item">
+                    <h1>ninja</h1>
+                    <p>noun</p>
+                    <p>Plural: ninjas</p>
+                    <button>37 likes</button>
+                </div>
+                <div class="definition">
+                    <p>A <a href="#">programmer </a> who breakes</p>
+                    <p>down problems with <a href="#">zen-</a>like</p>
+                    <p>focus</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- right side -->
+
+        <div class="right-column">
+            <div class="you">
+                <H3>Dojonary is</H3>
+                <h3>defined by YOU</h3>
+                <button class="def" onclick="hide(this)">Add Definition</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
