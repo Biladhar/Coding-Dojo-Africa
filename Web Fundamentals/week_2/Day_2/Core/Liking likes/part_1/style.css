@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 37px;
+}
+
+
+/* the box */ 
+
+.box{
+    border: 2px solid black;
+    width: 400px;
+    height: 100px;
+    padding: 30px 0px;
+}
+
+/* top of the box */
+
+.upper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.right{
+    display: flex;
+    gap: 15px;
+}
+
+.right button{
+    background-color: #feda72;
+    width: 40px;
+    box-shadow: 1px 2px 2px black ;
+} 
+
+/* bottom of the box */
+
+.bottom{
+    padding: 30px 60px
+}
+
