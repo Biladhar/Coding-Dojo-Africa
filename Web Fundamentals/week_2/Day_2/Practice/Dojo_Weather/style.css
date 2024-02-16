@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+}
+
+.top{
+    background-color: #a1c4f5;
+    color: white;
+}
+
+.container, .nav{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+h1{
+    font-size: 3rem
+}
+
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.subtitle-line{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.subtitle-line h2{
+    font-size: 1.5rem;
+}
+
+.subtitle-line select, .subtitle-line label{
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.subtitle-line select{
+    width: 60px;
+}
+
+.row{
+    display: flex;
+}
+
+.forecast{
+    flex: 1;
+    text-align: center;
+    background-color: #cccccc;
+    padding: 40px 0;
+    margin-right: 20px;
+}
+
+.forecast:last-child{
+    margin-right: 0;
+}
+
+.forecast img{
+    border-radius: 50%;
+    width: 156px;
+    margin: 40px 0;
+}
+
+.forecast p{
+    font-size: 1.2rem;
+}
+
+.temperature{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.high, .low {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.high::after, .low::after {
+    content: "°";
+}
+
+.high {
+    color: #cf2a27;
+}
+
+.low {
+    color: #2b78e4;
+}
+
+.footer{
+    width: 100%;
+    display: block;
+    bottom: 10px;
+}
+
+.cookiePolicy{
+    box-sizing: border-box;
+    width: 1000px;
+    height: 160px;
+    padding: 20px;
+    position: absolute;
+    border: 2px solid #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #000;
+    box-shadow: 4px 4px #000;
+    background-color: #3376db;
+    cursor: pointer;
+}
+
+.text{
+    width: 70%;
+}
+
+.text h2{
+    font-size: 1.2rem;
+}
+
+.text p{
+    font-size: 1.2rem;
+}
