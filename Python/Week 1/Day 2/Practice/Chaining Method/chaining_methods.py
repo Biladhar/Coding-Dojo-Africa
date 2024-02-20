@@ -14,77 +14,39 @@ class user:
         print("age: ", self.age)
         print("is rewards member: ", self.is_rewards_member)
         print("Gold card points: ", self.gold_card_points)
+        return self
 # * adding enroll method
     def enroll(self):
         if (self.is_rewards_member == True):
             print("User already a member.")
-            return False
+            return self
         else:
             self.is_rewards_member = True
             self.gold_card_points = 200
-            return True
+            return self
+
 # * adding spend_point method
     def spend_points(self,amount):
         if(self.gold_card_points>= amount):
             self.gold_card_points = self.gold_card_points - amount
+            return self
         else:
             no_point = "You don't have enough points"
             print(no_point)
-            return no_point
+            return self
+
 
 
 
 
 
 user1 = user("foulen","benfoulen","f@f.f",30)
-
-user1.display_info()
-
-user1.enroll()
-
 cristiano = user("Cristiano", "Ronaldo", "cristiano@ronaldo.com", 39)
 messi = user("leo","messi", "leo@messi.com", 40 )
 
 
-cristiano.display_info()
-
-print("="*30)
-
-cristiano.enroll()
-
-print("="*30)
-
-cristiano.display_info()
-
-print("="*30)
-
-cristiano.spend_points(50)
-
-print("="*30)
-
-messi.enroll()
-
-print("="*30)
-
-messi.spend_points(80)
-
-print("="*30)
-
-messi.display_info()
-print("="*30)
-cristiano.display_info()
-print("="*30)
-cristiano.enroll()
-print("="*30)
-messi.spend_points(300)
-
-
-
-
-
-
-
-
-
+user1.display_info().enroll()
+cristiano.display_info().enroll() .display_info().spend_points(50).display_info().enroll()
+messi.enroll().spend_points(80).display_info().spend_points(300)
 
 
