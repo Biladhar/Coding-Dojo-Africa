@@ -1,3 +1,6 @@
+
+# ! 1 Update Values in Dictionaries and Lists
+
 x = [ [5,2,3], [10,8,9] ] 
 students = [
     {'first_name':  'Michael', 'last_name' : 'Jordan'},
@@ -17,7 +20,7 @@ print(x)
 
 #2Change the last_name of the first student from 'Jordan' to 'Bryant'
 
-students[1]["last_name"] = "Bryant"
+students[0]["last_name"] = "Bryant"
 print(students)
 
 #3 In the sports_directory, change 'Messi' to 'Andres'
@@ -29,3 +32,52 @@ print(sports_directory)
 
 z[0]['y']= 30
 print(z)
+
+
+# ! 2 Iterate Through a List of Dictionaries
+
+students = [
+    {'first_name':  'Michael', 'last_name' : 'Jordan'},
+    {'first_name' : 'John', 'last_name' : 'Rosales'},
+    {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+    {'first_name' : 'KB', 'last_name' : 'Tonel'}
+]
+
+# def iterateDictionary(students):
+#     for any_dict in students:
+#         for key, value in any_dict.items():
+#             print(f"{key} - {value}",end=", ")
+#         print()
+
+
+# iterateDictionary(students)
+
+# ! 3 Get Values From a List of Dictionaries
+
+def iterateDictionary2(key_name, some_list):
+    for any_dict in some_list:
+        print(any_dict[key_name])
+
+
+iterateDictionary2('first_name', students)
+print("="*50)
+iterateDictionary2('last_name', students)
+
+# ! 4 Iterate Through a Dictionary with List Values
+
+dojo = {
+    'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+    'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+
+def printInfo(some_dict):
+    for key , value in some_dict.items():
+        print( len(value) , key)
+        for i in value:
+            print(i)
+        print("="*50)
+
+
+printInfo(dojo)
+
+
