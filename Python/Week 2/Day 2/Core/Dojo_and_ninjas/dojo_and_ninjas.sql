@@ -8,10 +8,7 @@ DELETE FROM dojos_and_ninjas_shema.dojos ;
 
 INSERT INTO dojos_and_ninjas_shema.dojos (name) VALUES ("coding2"),("art2"),("music2");
 
-
-
 SELECT * FROM dojos_and_ninjas_shema.ninjas ;
-
 
 INSERT INTO dojos_and_ninjas_shema.ninjas (first_name , last_name , age , dojo_id ) VALUES ("steve","jobs",80,4), ("elon","musk",46, 4) ,("bill","gates",53,4);
 
@@ -22,7 +19,6 @@ INSERT INTO dojos_and_ninjas_shema.ninjas (first_name , last_name , age , dojo_i
 SELECT * FROM  dojos_and_ninjas_shema.ninjas WHERE dojo_id = 4 ;
 
 SELECT * FROM  dojos_and_ninjas_shema.ninjas WHERE dojo_id = 6 ;
-
 
 SELECT dojos.name FROM dojos
 JOIN ninjas ON dojo_id = ninjas.dojo_id
