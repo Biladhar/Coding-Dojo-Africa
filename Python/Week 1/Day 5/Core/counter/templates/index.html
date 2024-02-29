@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link your custom CSS file -->
+    <link href="/static/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 center">
+                <h1>COUNTER</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 center">
+                <p>{{ visits }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 center">
+                <div class="btn-group">
+                    <form action="{{ url_for('index') }}" method="POST">
+                        <button type="submit" class="btn btn-primary" name="action" value="count">Count</button>
+                        <button type="submit" class="btn btn-danger" name="action" value="reset">reset</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
