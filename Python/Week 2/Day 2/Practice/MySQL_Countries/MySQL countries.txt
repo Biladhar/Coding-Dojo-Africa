@@ -1,0 +1,53 @@
+MySQL countries
+
+-- 1
+SELECT country.Name , countrylanguage.Language , countrylanguage.Percentage 
+FROM country 
+JOIN countrylanguage ON countrylanguage.CountryCode = country.Code
+WHERE countrylanguage.Language = "Slovene"
+ORDER BY countrylanguage.Percentage DESC;
+-- 2
+SELECT country.name , COUNT(city.id) AS cities
+FROM city
+JOIN country ON city.CountryCode = country.Code
+GROUP BY city.CountryCode
+ORDER BY cities DESC;
+
+SELECT * from country;
+-- 3
+SELECT city.Name , city.Population , country.code
+FROM city
+JOIN country ON city.CountryCode = country.Code
+WHERE (country.Name = "Mexico") and (city.Population > 500.000)
+ORDER BY city.Population DESC;
+-- 4
+SELECT country.Name , countrylanguage.Language , countrylanguage.Percentage
+FROM countrylanguage
+JOIN country ON countrylanguage.CountryCode = country.Code
+WHERE (countrylanguage.Percentage > 89 ) 
+ORDER BY countrylanguage.Percentage DESC;
+-- 5
+SELECT country.Name , country.SurfaceArea , country.Population 
+FROM country
+WHERE  country.SurfaceArea < 501 
+AND country.Population > 100000 ;
+
+ -- 6
+ SELECT country.name , country.GovernmentForm , country.Capital , country.LifeExpectancy
+ FROM country
+ WHERE country.GovernmentForm = "constitutional monarchy"
+ AND country.LifeExpectancy > 75;
+ 
+ -- 7
+ SELECT country.name , city.Name , city.District , city.Population
+ FROM country
+ JOIN city ON city.CountryCode = country.Code
+ WHERE country.Name = "Argentina"
+ AND city.Population > 500000
+ AND city.District ="Buenos Aires";
+ 
+  -- 8 
+  SELECT country.Region , COUNT(country.code) AS countries
+  FROM country
+  GROUP BY country.Region
+  ORDER BY countries DESC;
