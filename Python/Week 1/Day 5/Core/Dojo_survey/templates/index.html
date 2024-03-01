@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container px-5 my-5 bg-dark p-5">
+        <form id="contactForm" action="/process" method="POST" >
+            <h1 class="text-center text-warning" >Dojo Survery</h1>
+            <div class="mb-3">
+                <label class="form-label text-light" for="newField2">Your Name Here :</label>
+                <input name="name" class="form-control" id="newField2" type="text" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="newField2:required"></div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light" for="newField4">Dojo Location :</label>
+                <select class="form-select" id="newField4" aria-label="New Field 4" name="location">
+                    <option value="Tunis">Tunis</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Miamie">Miamie</option>
+                    <option value="Paris">Paris</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light" for="newField6">Favorite_language :</label>
+                <select class="form-select" id="newField6" aria-label="New Field 6" name="Favorite_language">
+                    <option value="python">python</option>
+                    <option value="java">java</option>
+                    <option value="HTML">HTML</option>
+                    <option value="Javascript">Javascript</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label text-light" for="newField8">Comment (optional)</label>
+                <textarea class="form-control" id="newField8" type="text"  style="height: 10rem;" name="comment"></textarea>
+                <div></div>
+            </div>
+            <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                </div>
+            </div>
+            <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">Error sending message!</div>
+            </div>
+            <div class="d-grid">
+                <button class="btn btn-primary btn-lg " id="submitButton" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
