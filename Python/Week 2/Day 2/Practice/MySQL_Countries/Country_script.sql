@@ -17,7 +17,7 @@ SELECT city.Name , city.Population , country.code
 FROM city
 JOIN country ON city.CountryCode = country.Code
 WHERE (country.Name = "Mexico") and (city.Population > 500.000)
-ORDER BY city.Population DESC;
+ORDER BY city.Population DESC;friends
 -- 4
 SELECT country.Name , countrylanguage.Language , countrylanguage.Percentage
 FROM countrylanguage
