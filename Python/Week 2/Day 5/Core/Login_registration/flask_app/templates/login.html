@@ -60,7 +60,7 @@
                 <br>
                 {% with messages = get_flashed_messages(category_filter=["login"]) %}
                 {% for message in messages %}
-                <p class>{{message}}</p>
+                <p style="color: red;">{{message}}</p>
                 {% endfor %}
                 {% endwith %}
                 <form action="/login" method="post">
