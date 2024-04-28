@@ -1,3 +1,4 @@
+// import mongoose to build the model
 const mongoose = require("mongoose")
 
 // The model - the rules the entries need to follow
@@ -23,4 +24,6 @@ const ProductSchema = new mongoose.Schema({
 },
     { timestamps: true });
 
-module.exports = mongoose.model ("Product", ProductSchema);
+
+const Product = mongoose.model ("Product", ProductSchema);
+module.exports = Product;
