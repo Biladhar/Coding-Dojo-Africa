@@ -1,8 +1,5 @@
 public class Phone extends Device {
 
-    public Phone() {
-        super();
-    }
 
     //!methods
     // Make a call
