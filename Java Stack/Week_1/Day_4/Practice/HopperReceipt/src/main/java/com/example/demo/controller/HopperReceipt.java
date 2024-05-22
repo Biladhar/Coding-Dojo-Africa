@@ -32,7 +32,7 @@ public class HopperReceipt {
         String description2 = "The weapon of a Jedi Knight. Not as clumsy or random as a blaster. An elegant weapon for a more civilized age.";
         String vendor2 = "Galactic Empire";
 
-        // Add attributes to the model
+        // Add attributes second test to the model
         model.addAttribute("name2", name2);
         model.addAttribute("itemName2", itemName2);
         model.addAttribute("price2", price2);
